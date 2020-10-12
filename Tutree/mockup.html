@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="mockup.css">
+    
+    <title> Mockup </title>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="div1"> <!-- full div nav -->
+          <div class="logo"> <!-- logo div-->
+            <a href="#"> <img src="clogo2.png" alt="logo image" /> </a>
+          </div>
+
+          <div class=" n1 "> <!-- nav bar div -->
+            <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                     <li class="nav-item ">
+                        <a class="nav-link" href="#"> Find Jobs </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"> Create your Profile </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#"> Recommendations </a>
+                      </li>
+                     <li class="nav-item">
+                      <a class="nav-link " href="#"> Resources </a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+          </div>    <!--nav bar div -->
+
+          <div class="n2">
+            <div class="sign">
+              <a href="#"> Sign In </a>
+            </div>
+            <nav class="nav1">
+              <ul class="ul1">
+                <li> <a href="#"> Employers </a> 
+                  <br>
+                  <ul class="drop">
+                    <li> <a href="#"> Employers sign in </a> </li>
+                     <li> <a href="#"> Employers</a> </li> 
+                     <li> <a href="#"> Search Resumes</a> </li> 
+                     <li> <a href="#"> Post Jobs</a> </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      </div>  <!-- full div nav -->
+      <br>
+
+      <br>
+      <br>
+      
+      <div class="jobs">
+        <p>
+          Jobs and vacancies
+        </p>
+        <div class="inp">
+          <input type="text" name="job" placeholder="Eg.Programmer" style="border:1px solid white;">
+          <input type="text" name="place" placeholder="Eg.Mumbai" style="border:1px solid white;">
+          &nbsp; &nbsp; <button type="button" style="border-radius: 3px; border: 1px solid deepskyblue"> Find Jobs</button>
+        </div>
+      </div>
+    </div>
+
+
+<div class="row">
+  <div class="cont1">
+    <div class="filters col-lg-11 col-md-12 col-sm-12 col-xs-12">
+      <div class="cont1button col-md-12 col-sm-12 col-xs-12">
+        <button type="button" id="button0" onclick="opencont()" ondblclick="closecont()" class="btn-block">
+          Show Filters
+        </button>
+      </div>
+      <div class="conts col-md-12 col-sm-12 col-xs-12">
+        <div class="cont1a">
+          <br>
+          <button class="accordion"> Date Posted </button>
+          <div class="panel">
+            <p> <p> <input type="radio"> &nbsp; 24 hours </p>
+            <p> <input type="radio"> &nbsp; 3 days</p>
+            <p> <input type="radio"> &nbsp; 7 days</p>
+            <p>  <input type="radio"> &nbsp; 30 days</p></p>
+          </div>
+        </div>
+        <hr>
+        <div class="cont1b">
+          <button class="accordion"> Job Type </button>
+            <div class="panel">
+              <p>
+                <p> 
+                  <input type="checkbox" id="all" name="all" value=" All">
+                  <label for="all"> &nbsp; All</label><br>
+                </p>
+                <p> 
+                  <input type="checkbox" id="ft" name="ft" value=" Full-time">
+                  <label for="ft"> &nbsp; Full-time</label><br> 
+                </p>
+                <p>   
+                  <input type="checkbox" id="pt" name="pt" value=" Part-time">
+                  <label for="pt"> &nbsp; Part-time</label><br>
+                </p>
+              </p>
+            </div>
+        </div>
+        <hr>
+        <div class="cont1c">
+          <button class="accordion"> Categories </button>
+          <div class="panel">
+            <p>
+              <p> 
+                <input type="checkbox" id="it" name="it" value=" Information-Technology">
+                <label for="it"> &nbsp;  Information-Technology</label><br>
+              </p>
+              <p>  
+                <input type="checkbox" id="engg" name="engg" value=" Engineering">
+                <label for="engg"> &nbsp; Engineering</label><br>
+              </p>
+              <p>
+                <input type="checkbox" id="ps" name="ps" value=" Professional-Services">
+                <label for="ps"> &nbsp; Professional-Services</label><br>
+              </p>
+            </p>
+          </div> <!-- panel -->
+        </div>
+        <hr>
+        <div class="cont1button">
+          <button type="button" id="button1">
+            Filter Jobs
+          </button>
+        </div>
+      </div>
+     </div> <!--filters-->
+  </div> <!--cont1-->
+
+
+
+
+
+
+  <div class="cont2 col-lg-6 col-md-10 col-sm-12 col-xs-12 "> <!--cont2-->
+    <div class="cont2a">
+      <div id="sort">
+        <h6 id="sortid" style="float: left;"> Sort By : &nbsp;  <a href="#" > Relevance </a> &nbsp; | &nbsp; <a href="#" > Date </a> 
+        </h6>
+        <button type="button" id="buttonf" class="btn btn-primary" style="float: left;" data-toggle="modal" data-target="#staticBackdrop">    Feedback  
+        </button>
+
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                 <div class="logoa1">
+                   <img src="clogo4.png" alt="logo img">
+                  </div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+               <p><h5 class="modal-title" id="staticBackdropLabel" style="width: 100%;"> What type of Feedback would you like to leave for us!</h5>
+               </p>
+               <br>
+                <button type="button" class=" btn-block buttongr"> Suggestions or General Feedbacks </button>
+                <br>
+                <button type="button" class=" btn-block  buttongr"> Bug or Some Issues</button>
+                <br>
+                <button type="button" class=" btn-block  buttongr"> Question </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary"> >> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <div class="main1a">
+        <div class="p1">
+          <h5> Software Developer </h5>
+          <p>  Building websites using HTML CSS and Javascript.
+               Modifying and updating the websites according to the need.
+               Ensuring that websites are visually attractive and user friendly.</p>
+               <p> location : Bangalore  &nbsp;| &nbsp;  Contact : <a href="mailto:abc@example.com"> Mr. ABC </a> </p>
+        </div>
+        <br>
+        <div class="p1">
+          <h5> Software Developer </h5>
+          <p>  Building websites using HTML CSS and Javascript.
+               Modifying and updating the websites according to the need.
+               Ensuring that websites are visually attractive and user friendly.</p>
+               <p> location : Mumbai  &nbsp;| &nbsp;  Contact : <a href="mailto:abc@example.com"> Mr. ABC </a> </p>
+        </div>
+        <br>
+         <div class="p1">
+          <h5> Sr.Software Developer </h5>
+          <p>   Develop UI/UX.
+                Develop a website using software tools such as HTML, CSS, Bootstrap, Ajax, jQuery, JavaScript, ReactJS, Laravel.
+                Assist our team with other work, related to website development.</p>
+               <p> location : Mumbai  &nbsp;| &nbsp;  Contact : <a href="mailto:abc@example.com"> Mr. ABC</a> </p>
+        </div>
+        <br>
+         <div class="p1">
+          <h5> Remote Mobile Application Developer </h5>
+          <p>  Building websites using HTML CSS and Javascript.
+               Modifying and updating the websites according to the need.
+               Ensuring that websites are visually attractive and user friendly.</p>
+               <p> location : Hyderabad  &nbsp;| &nbsp;  Contact : <a href="mailto:abc@example.com"> Mr. ABC </a> </p>
+        </div>
+        <br>
+        <div class="p1">
+          <h5> Product Manager </h5>
+          <p>  Building websites using HTML CSS and Javascript.
+               Modifying and updating the websites according to the need.
+               Ensuring that websites are visually attractive and user friendly.</p>
+               <p> location : Chennai  &nbsp;| &nbsp;  Contact : <a href="mailto:abc@example.com"> Mr. ABC </a> </p>
+        </div>
+
+
+      </div> <!-- main1a -->
+    </div>
+  </div>
+
+
+</div><!-- cont2-->
+
+
+
+
+
+</div> <!-- row -->
+
+
+
+
+
+
+</div> <!-- container div -->
+
+
+ 
+ 
+<div class="nr3" style="text-align: center;"> 
+  <p> <h5> Need Help? Contact Us </h5> </p>
+
+  <p> <h4> copyright &copy; 2020. All rights reserved </h4> </p>
+</div> 
+
+
+
+  
+
+    <script type="text/javascript">
+      
+function opencont(){
+    var c=document.getElementsByClassName("conts")[0];
+   c.style.display="inline-block";
+}
+function closecont(){
+    var c=document.getElementsByClassName("conts")[0];
+   c.style.display="none";
+}
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
